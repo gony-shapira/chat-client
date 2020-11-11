@@ -6,7 +6,6 @@ import useStyles from "./ConversationsListStyles";
 function ConversationsList({ className }) {
     const conversations = useSelector((store) => Object.values(store.conversations));
     const classes = useStyles();
-    const lastMessage = conversations.lastMessage ? conversations.lastMessage.message : 'No messages';
 
     return (
         <div className={className}>
